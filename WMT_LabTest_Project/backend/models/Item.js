@@ -28,8 +28,10 @@ const itemSchema = new mongoose.Schema(
       trim: true,
     },
     modelNumber: {
-      type: Number,
-    },
+      type: String,
+      default: "",
+      trim: true,
+    }
   },
   { timestamps: true }
 );
